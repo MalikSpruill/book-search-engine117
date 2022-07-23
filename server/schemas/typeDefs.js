@@ -18,7 +18,7 @@ type User {
     savedBooks: [Book]
 }
 
-input InputBook {
+input book {
     description: String
     authors: [String]
     title: String
