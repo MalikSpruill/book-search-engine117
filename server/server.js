@@ -15,6 +15,8 @@ const server = new ApolloServer({ // create new Apollo server and pass schema da
 });
 
 const app = express();
+
+server.applyMiddleware({app});
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
